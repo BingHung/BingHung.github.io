@@ -1,822 +1,162 @@
-<div style="text-align: center;">
-<a href="https://2.bp.blogspot.com/-sznJI41En78/W3a-SjNYgFI/AAAAAAAAmwo/cgbQt_18pJ0WbRMoRSelL_uCpwR8J7YFACLcBGAs/s1600/WN.JPG" imageanchor="1"><img border="0" data-original-height="273" data-original-width="802" height="217" src="https://2.bp.blogspot.com/-sznJI41En78/W3a-SjNYgFI/AAAAAAAAmwo/cgbQt_18pJ0WbRMoRSelL_uCpwR8J7YFACLcBGAs/s640/WN.JPG" width="640" /></a></div>
-B16.5.html
-
+<!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/BingMainCSS.css" type="text/css">
+<script type="text/javascript" src="JS/BingMainJS.js"></script>
+</head>
 
 <style>
-* {
-  box-sizing: border-box;
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-  text-align: center;
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid rgb(12, 12, 12);
-  font-size: 18px;
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-  border: 1px solid rgb(12, 12, 12);
-  text-align: center;
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-#myTable tr {
-  border-bottom: 1px solid #ddd;
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+	  width="100%
 }
 
-#myTable tr.header, #myTable tr:hover {
-  background-color: #fbff00;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 </style>
-</head>
+
+
+
 <body>
-
-<h2>
-ASME B16.5 WN</h2>
-<input id="myInput" onkeyup="myFunction()" placeholder="Search for #.." title="Type in a name" type="text" />
-<table id="myTable">
-<tr class="header">
-    <th style="width: 6%;">#</th>
-    <th style="width: 16%;">NPS</th>
-    <th style="width: 6%;">Class</th>
-    <th style="width: 6%;">O</th>
-    <th style="width: 6%;">tf(min)</th>
-    <th style="width: 6%;">X</th>
-    <th style="width: 6%;">A</th>
-    <th style="width: 6%;">B(min)</th>
-    <th style="width: 6%;">Y1</th>
-    <th style="width: 6%;">Y2</th>
-    <th style="width: 6%;">R</th>
-    <th style="width: 6%;">B.C.D</th>
-    <th style="width: 6%;">Bolt Hole</th>
-    <th style="width: 6%;">Bolt Size(Metric)</th>
-    <th style="width: 6%;">Bolt Size(Imperial)</th>
-    <th style="width: 6%;">Bolt Length</th>
-  </tr>
-<tr>
-    <td>0.5150*</td>
-    <td>1/2</td>
-    <td>150</td>
-    <td>88.9</td>
-    <td>9.7</td>
-    <td>30.2</td>
-    <td>21.3</td>
-    <td>22.4</td>
-    <td>46</td>
-    <td>14.2</td>
-    <td>35.1</td>
-    <td>60.5</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>70</td>
-  </tr>
-<tr>
-    <td>0.75150</td>
-    <td>3/4</td>
-    <td>150</td>
-    <td>98.6</td>
-    <td>11.2</td>
-    <td>38.1</td>
-    <td>26.7</td>
-    <td>27.7</td>
-    <td>50.8</td>
-    <td>14.2</td>
-    <td>42.9</td>
-    <td>69.9</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>75</td>
-  </tr>
-<tr>
-    <td>1150**</td>
-    <td>1</td>
-    <td>150</td>
-    <td>108</td>
-    <td>12.7</td>
-    <td>49.3</td>
-    <td>33.5</td>
-    <td>34.5</td>
-    <td>53.8</td>
-    <td>15.7</td>
-    <td>50.8</td>
-    <td>79.2</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>75</td>
-  </tr>
-<tr>
-    <td>1.25150</td>
-    <td>1-1/4</td>
-    <td>150</td>
-    <td>117.3</td>
-    <td>14.2</td>
-    <td>58.7</td>
-    <td>42.2</td>
-    <td>43.2</td>
-    <td>55.6</td>
-    <td>19.1</td>
-    <td>63.5</td>
-    <td>88.9</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>85</td>
-  </tr>
-<tr>
-    <td>1.5150*</td>
-    <td>1-1/2</td>
-    <td>150</td>
-    <td>127</td>
-    <td>15.7</td>
-    <td>65</td>
-    <td>48.3</td>
-    <td>49.5</td>
-    <td>60.5</td>
-    <td>20.6</td>
-    <td>73.2</td>
-    <td>98.6</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>85</td>
-  </tr>
-<tr>
-    <td>2150**</td>
-    <td>2</td>
-    <td>150</td>
-    <td>152.4</td>
-    <td>17.5</td>
-    <td>77.7</td>
-    <td>60.5</td>
-    <td>62</td>
-    <td>62</td>
-    <td>23.9</td>
-    <td>91.9</td>
-    <td>120.7</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>95</td>
-  </tr>
-<tr>
-    <td>2.5150*</td>
-    <td>2-1/2</td>
-    <td>150</td>
-    <td>177.8</td>
-    <td>20.6</td>
-    <td>90.4</td>
-    <td>73.2</td>
-    <td>74.7</td>
-    <td>68.3</td>
-    <td>26.9</td>
-    <td>104.6</td>
-    <td>139.7</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>100</td>
-  </tr>
-<tr>
-    <td>3150**</td>
-    <td>3</td>
-    <td>150</td>
-    <td>190.5</td>
-    <td>22.4</td>
-    <td>108</td>
-    <td>88.9</td>
-    <td>90.7</td>
-    <td>68.3</td>
-    <td>28.4</td>
-    <td>127</td>
-    <td>152.4</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>100</td>
-  </tr>
-<tr>
-    <td>3.5150*</td>
-    <td>3-1/2</td>
-    <td>150</td><td>215.9</td><td>22.4</td>
-    <td>122.2</td><td>101.6</td><td>103.4</td><td>69.9</td>
-    <td>30.2</td><td>139.7</td><td>177.8</td><td>19.1</td>
-    <td>5/8x11UNC</td><td>M16-8</td><td>100</td>
-  </tr>
-<tr>
-    <td>4150**</td>
-    <td>4</td>
-    <td>150</td>
-    <td>228.6</td>
-    <td>22.4</td>
-    <td>134.9</td>
-    <td>114.3</td>
-    <td>116.1</td>
-    <td>74.7</td>
-    <td>31.8</td>
-    <td>157.2</td>
-    <td>190.5</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-8</td>
-    <td>100</td>
-  </tr>
-<tr>
-    <td>5150**</td>
-    <td>5</td>
-    <td>150</td>
-    <td>254</td>
-    <td>22.4</td>
-    <td>163.6</td>
-    <td>141.2</td>
-    <td>143.8</td>
-    <td>87.4</td>
-    <td>35.1</td>
-    <td>185.7</td>
-    <td>215.9</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>110</td>
-  </tr>
-<tr>
-    <td>6150**</td>
-    <td>6</td>
-    <td>150</td>
-    <td>279.4</td>
-    <td>23.9</td>
-    <td>192</td>
-    <td>168.4</td>
-    <td>170.7</td>
-    <td>87.4</td>
-    <td>38.1</td>
-    <td>215.9</td>
-    <td>241.3</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>115</td>
-  </tr>
-<tr>
-    <td>8150**</td>
-    <td>8</td>
-    <td>150</td>
-    <td>342.9</td>
-    <td>23.9</td>
-    <td>246.1</td>
-    <td>219.2</td>
-    <td>221.5</td>
-    <td>100.1</td>
-    <td>42.9</td>
-    <td>269.7</td>
-    <td>298.5</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>120</td>
-  </tr>
-<tr>
-    <td>10150*</td>
-    <td>10</td>
-    <td>150</td>
-    <td>406.4</td>
-    <td>28.4</td>
-    <td>304.8</td>
-    <td>273.1</td>
-    <td>276.4</td>
-    <td>100.1</td>
-    <td>47.8</td>
-    <td>323.9</td>
-    <td>362</td>
-    <td>25.4</td>
-    <td>7/8x9UNC</td>
-    <td>M22-12</td>
-    <td>130</td>
-  </tr>
-<tr>
-    <td>12150*</td>
-    <td>12</td>
-    <td>150</td>
-    <td>482.6</td>
-    <td>30.2</td>
-    <td>365.3</td>
-    <td>323.9</td>
-    <td>327.2</td>
-    <td>112.8</td>
-    <td>53.8</td>
-    <td>381</td>
-    <td>431.8</td>
-    <td>25.4</td>
-    <td>7/8x9UNC</td>
-    <td>M22-12</td>
-    <td>135</td>
-  </tr>
-<tr>
-    <td>14150*</td>
-    <td>14</td>
-    <td>150</td>
-    <td>533.4</td>
-    <td>33.3</td>
-    <td>400.1</td>
-    <td>355.6</td>
-    <td>359.2</td>
-    <td>125.5</td>
-    <td>55.6</td>
-    <td>412.8</td>
-    <td>476.3</td>
-    <td>28.6</td>
-    <td>1x8UN</td>
-    <td>M27x3-12</td>
-    <td>145</td>
-  </tr>
-<tr>
-    <td>16150*</td>
-    <td>16</td>
-    <td>150</td>
-    <td>596.9</td>
-    <td>35.1</td>
-    <td>457.2</td>
-    <td>406.4</td>
-    <td>410.5</td>
-    <td>125.5</td>
-    <td>62</td>
-    <td>469.9</td>
-    <td>539.8</td>
-    <td>28.6</td>
-    <td>1x8UN</td>
-    <td>M27x3-16</td>
-    <td>145</td>
-  </tr>
-<tr>
-    <td>18150*</td>
-    <td>18</td>
-    <td>150</td>
-    <td>635</td>
-    <td>38.1</td>
-    <td>505</td>
-    <td>457.2</td>
-    <td>461.8</td>
-    <td>138.2</td>
-    <td>66.5</td>
-    <td>533.4</td>
-    <td>577.9</td>
-    <td>31.8</td>
-    <td>1-1/8x8UN</td>
-    <td>M30x3-16</td>
-    <td>146</td>
-  </tr>
-<tr>
-    <td>20150*</td>
-    <td>20</td>
-    <td>150</td>
-    <td>698.5</td>
-    <td>41.1</td>
-    <td>558.8</td>
-    <td>508</td>
-    <td>516.1</td>
-    <td>142.7</td>
-    <td>71.4</td>
-    <td>584.2</td>
-    <td>635</td>
-    <td>31.8</td>
-    <td>1-1/8x8UN</td>
-    <td>M30x3-20</td>
-    <td>159</td>
-  </tr>
-<tr>
-    <td>24150*</td>
-    <td>24</td>
-    <td>150</td>
-    <td>812.8</td>
-    <td>46</td>
-    <td>663.4</td>
-    <td>609.6</td>
-    <td>616</td>
-    <td>150.9</td>
-    <td>81</td>
-    <td>692.2</td>
-    <td>749.3</td>
-    <td>34.9</td>
-    <td>1-1/4x8UN</td>
-    <td>M32x3-20</td>
-    <td>185</td>
-  </tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-<tr>
-    <td>0.5300*</td>
-    <td>1/2</td>
-    <td>300</td>
-    <td>95.3</td>
-    <td>12.7</td>
-    <td>38.1</td>
-    <td>21.3</td>
-    <td>22.4</td>
-    <td>50.8</td>
-    <td>20.6</td>
-    <td>35.1</td>
-    <td>66.5</td>
-    <td>15.9</td>
-    <td>1/2x13UNC</td>
-    <td>M12-4</td>
-    <td>75</td>
-  </tr>
-<tr>
-    <td>0.75300</td>
-    <td>3/4</td>
-    <td>300</td>
-    <td>117.3</td>
-    <td>14.2</td>
-    <td>47.8</td>
-    <td>26.7</td>
-    <td>27.7</td>
-    <td>55.6</td>
-    <td>23.9</td>
-    <td>42.9</td>
-    <td>82.6</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>90</td>
-  </tr>
-<tr>
-    <td>1300**</td>
-    <td>1</td>
-    <td>300</td>
-    <td>124</td>
-    <td>15.7</td>
-    <td>53.8</td>
-    <td>33.5</td>
-    <td>34.5</td>
-    <td>60.5</td>
-    <td>25.4</td>
-    <td>50.8</td>
-    <td>88.9</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>90</td>
-  </tr>
-<tr>
-    <td>1.25300</td>
-    <td>1-1/4</td>
-    <td>300</td>
-    <td>133.4</td>
-    <td>17.5</td>
-    <td>63.5</td>
-    <td>42.2</td>
-    <td>43.2</td>
-    <td>63.5</td>
-    <td>25.4</td>
-    <td>63.5</td>
-    <td>98.6</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-4</td>
-    <td>95</td>
-  </tr>
-<tr>
-    <td>1.5300*</td>
-    <td>1-1/2</td>
-    <td>300</td>
-    <td>155.4</td>
-    <td>19.1</td>
-    <td>69.9</td>
-    <td>48.3</td>
-    <td>49.5</td>
-    <td>66.8</td>
-    <td>28.7</td>
-    <td>73.2</td>
-    <td>114.3</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-4</td>
-    <td>100</td>
-  </tr>
-<tr>
-    <td>2300**</td>
-    <td>2</td>
-    <td>300</td>
-    <td>165.1</td>
-    <td>20.6</td>
-    <td>84.1</td>
-    <td>60.5</td>
-    <td>62</td>
-    <td>68.3</td>
-    <td>31.8</td>
-    <td>91.9</td>
-    <td>127</td>
-    <td>19.1</td>
-    <td>5/8x11UNC</td>
-    <td>M16-8</td>
-    <td>100</td>
-  </tr>
-<tr>
-    <td>2.5300*</td>
-    <td>2-1/2</td>
-    <td>300</td>
-    <td>190.5</td>
-    <td>23.9</td>
-    <td>100.1</td>
-    <td>73.2</td>
-    <td>74.7</td>
-    <td>74.7</td>
-    <td>36.6</td>
-    <td>104.6</td>
-    <td>149.4</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>115</td>
-  </tr>
-<tr>
-    <td>3300**</td>
-    <td>3</td>
-    <td>300</td>
-    <td>209.6</td>
-    <td>26.9</td>
-    <td>117.3</td>
-    <td>88.9</td>
-    <td>90.7</td>
-    <td>77.7</td>
-    <td>41.4</td>
-    <td>127</td>
-    <td>168.1</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>120</td>
-  </tr>
-<tr>
-    <td>3.5300*</td>
-    <td>3-1/2</td>
-    <td>300</td>
-    <td>228.6</td>
-    <td>28.4</td>
-    <td>133.4</td>
-    <td>101.6</td>
-    <td>103.4</td>
-    <td>79.5</td>
-    <td>42.9</td>
-    <td>139.7</td>
-    <td>184.2</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>120</td>
-  </tr>
-<tr>
-    <td>4300**</td>
-    <td>4</td>
-    <td>300</td>
-    <td>254</td>
-    <td>30.2</td>
-    <td>146.1</td>
-    <td>114.3</td>
-    <td>116.1</td>
-    <td>84.3</td>
-    <td>46.2</td>
-    <td>157.2</td>
-    <td>200.2</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>130</td>
-  </tr>
-<tr>
-    <td>5300**</td>
-    <td>5</td>
-    <td>300</td>
-    <td>279.4</td>
-    <td>33.3</td>
-    <td>177.8</td>
-    <td>141.2</td>
-    <td>143.8</td>
-    <td>97</td>
-    <td>49.3</td>
-    <td>185.7</td>
-    <td>235</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-8</td>
-    <td>135</td>
-  </tr>
-<tr>
-    <td>6300**</td>
-    <td>6</td>
-    <td>300</td>
-    <td>317.5</td>
-    <td>35.1</td>
-    <td>206.2</td>
-    <td>168.4</td>
-    <td>170.7</td>
-    <td>97</td>
-    <td>50.8</td>
-    <td>215.9</td>
-    <td>269.7</td>
-    <td>22.2</td>
-    <td>3/4x10UNC</td>
-    <td>M20-12</td>
-    <td>135</td>
-  </tr>
-<tr>
-    <td>8300**</td>
-    <td>8</td>
-    <td>300</td>
-    <td>381</td>
-    <td>39.6</td>
-    <td>260.4</td>
-    <td>219.2</td>
-    <td>221.5</td>
-    <td>109.7</td>
-    <td>60.5</td>
-    <td>269.7</td>
-    <td>330.2</td>
-    <td>25.4</td>
-    <td>7/8x9UNC</td>
-    <td>M22-12</td>
-    <td>140</td>
-  </tr>
-<tr>
-    <td>10300*</td>
-    <td>10</td>
-    <td>300</td>
-    <td>444.5</td>
-    <td>46</td>
-    <td>320.5</td>
-    <td>273.1</td>
-    <td>276.4</td>
-    <td>115.8</td>
-    <td>65</td>
-    <td>323.9</td>
-    <td>387.4</td>
-    <td>28.6</td>
-    <td>1x8UN</td>
-    <td>M27x3-16</td>
-    <td>170</td>
-  </tr>
-<tr>
-    <td>12300*</td>
-    <td>12</td>
-    <td>300</td>
-    <td>520.7</td>
-    <td>49.3</td>
-    <td>374.7</td>
-    <td>323.9</td>
-    <td>327.2</td>
-    <td>128.5</td>
-    <td>71.6</td>
-    <td>381</td>
-    <td>450.9</td>
-    <td>31.8</td>
-    <td>1-1/8x8UN</td>
-    <td>M30x3-16</td>
-    <td>185</td>
-  </tr>
-<tr>
-    <td>14300*</td>
-    <td>14</td>
-    <td>300</td>
-    <td>584.2</td>
-    <td>52.3</td>
-    <td>425.5</td>
-    <td>355.6</td>
-    <td>359.2</td>
-    <td>141.2</td>
-    <td>74.7</td>
-    <td>412.8</td>
-    <td>514.4</td>
-    <td>31.8</td>
-    <td>1-1/8x8UN</td>
-    <td>M30x3-20</td>
-    <td>190</td>
-  </tr>
-<tr>
-    <td>16300*</td>
-    <td>16</td>
-    <td>300</td>
-    <td>647.7</td>
-    <td>55.6</td>
-    <td>482.6</td>
-    <td>406.4</td>
-    <td>410.5</td>
-    <td>144.5</td>
-    <td>81</td>
-    <td>469.9</td>
-    <td>571.5</td>
-    <td>34.9</td>
-    <td>1-1/4x8UN</td>
-    <td>M33x3-24</td>
-    <td>205</td>
-  </tr>
-<tr>
-    <td>18300*</td>
-    <td>18</td>
-    <td>300</td>
-    <td>711.2</td>
-    <td>58.7</td>
-    <td>533.4</td>
-    <td>457.2</td>
-    <td>461.8</td>
-    <td>157.2</td>
-    <td>87.4</td>
-    <td>533.4</td>
-    <td>628.7</td>
-    <td>34.9</td>
-    <td>1-1/4x8UN</td>
-    <td>M33x3-24</td>
-    <td>210</td>
-  </tr>
-<tr>
-    <td>20300*</td>
-    <td>20</td>
-    <td>300</td>
-    <td>774.7</td>
-    <td>62</td>
-    <td>587.2</td>
-    <td>508</td>
-    <td>513.1</td>
-    <td>160.5</td>
-    <td>93.7</td>
-    <td>584.2</td>
-    <td>685.8</td>
-    <td>34.9</td>
-    <td>1-1/4x8UN</td>
-    <td>M33x3-24</td>
-    <td>215</td>
-  </tr>
-<tr>
-    <td>24300*</td>
-    <td>24</td>
-    <td>300</td>
-    <td>914.4</td>
-    <td>68.3</td>
-    <td>701.5</td>
-    <td>609.6</td>
-    <td>616</td>
-    <td>166.6</td>
-    <td>104.9</td>
-    <td>692.2</td>
-    <td>812.8</td>
-    <td>41.3</td>
-    <td>1-1/2x8UN</td>
-    <td>M39x3-24</td>
-    <td>240</td>
-  </tr>
-</table>
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-
+<!-- ******************************************  -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="dropdown">
+	<button class="dropbtn">Calc
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="" onclick="ASME_WN(); return false;">ASME WN</a>
+    </div>
+  </div>
+  <a href="" onclick="LinksToShare(); return false;">Links</a>
+</div>
+<!-- ****************************************** -->
 </body>
 </html>
+
+<iframe id="myIframe" src="" height="1000" width="100%"  style="border:none;"></iframe>
+<!-- ****************************************** 
+<embed id="myPdfEmbed" src="" width="100%" height="1000" type='application/pdf'></embed>
+<embed id="mySWEmbed" src="" width="100%" height="1000" ></embed>
+-->
+</html>
+
+<script>
+  //Code
+  function TEMA_PDF(){
+    document.getElementById("myIframe").src ="TEMA.pdf";
+  }
+    function DS_pdf(){
+    document.getElementById("myIframe").src ="DS2011.pdf";
+  }
+    function ASMEVIIID1_PDF(){
+    document.getElementById("myIframe").src ="ASME2017SECVIII1.pdf";
+  }
+    function ASMEVIIID2_PDF(){
+    document.getElementById("myIframe").src ="ASME2017SECVIII2.pdf";
+  }
+
+  //Catalog
+      function Zenwang_PDF(){
+    document.getElementById("myIframe").src ="Catalog/ZenWang.pdf";
+  }
+      function Gesmex_PDF(){
+    document.getElementById("myIframe").src ="Catalog/GESMEX.pdf";
+  }
+    function Uniwel_PDF(){
+    document.getElementById("myIframe").src ="Catalog/UNIWEL.pdf";
+  }
+    function SFin_GWC_PDF(){
+    document.getElementById("myIframe").src ="Catalog/GWC_SFin.pdf";
+  }
+    function LowFin_GWC_PDF(){
+    document.getElementById("myIframe").src ="Catalog/GWC_LowFin.pdf";
+  }
+    function UOP_PDF(){
+    document.getElementById("myIframe").src ="Catalog/UOP.pdf";
+  }
+  
+    //SW Calculations
+      function ASME_WN(){
+    document.getElementById("myIframe").src ="ASME_WN.html";
+  }
+    function LMTD_SW(){
+    document.getElementById("myIframe").src ="LMTD/LMTD_Calc.html";
+  }
+
+    function Blasius_SW(){
+    document.getElementById("myIframe").src ="Inner%20Tube%20Pressure%20Drop%20Calculation/InnerTubePressureDrop.html";
+  }
+
+    function Gnielinski_SW(){
+    document.getElementById("myIframe").src ="Inner%20Tube%20Heat%20Transfer%20Calculation/InnerTubeHeatTransfer.html";
+  }
+    function UnitConvert_SW(){
+    document.getElementById("myIframe").src ="Unit%20Converter/UnitConvert.html";
+  }
+      function VFR_SW(){
+    document.getElementById("myIframe").src ="Volumetric%20Flow%20Rate%20Calculations/Nm3Tokg.html";
+  }
+
+  //Links
+    function LinksToShare(){
+    document.getElementById("myIframe").src ="BingMain_Links.html";
+  }
+</script>
