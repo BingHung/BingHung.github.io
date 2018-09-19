@@ -72,7 +72,6 @@
 </style>
 
 
-
 <body>
 <!-- ******************************************  -->
 <div class="navbar">
@@ -85,6 +84,25 @@
       <a href="" onclick="ASME_WN(); return false;">ASME WN</a>
     </div>
   </div>
+  <div class="dropdown">
+    <button class="dropbtn">Unit Converter
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <a href="" onclick="UC_Flow_Mass(); return false;">Flow Mass</a>
+          <a href="" onclick="UC_Density(); return false;">Density</a>
+          <a href="" onclick="UC_Viscoisty_Dynamic(); return false;">Viscosity Dynamic</a>
+          <a href="" onclick="UC_Specific_Heat_Capacity(); return false;">Specific Heat Capacity</a>
+          <a href="" onclick="UC_Thermal_Conductivity(); return false;">Thermal Conductivity</a>
+          <a href="" onclick="UC_Temperature(); return false;">Temperature</a>
+          <a href="" onclick="UC_Pressure(); return false;">Pressure</a>
+          <a href="" onclick="UC_Power(); return false;">Power</a>
+          <a href="" onclick="UC_Heat_Transfer_Coefficient(); return false;">Heat Transfer Coefficient</a>
+          <a href="" onclick="UC_Length(); return false;">Length</a>
+          <a href="" onclick="UC_Area(); return false;">Area</a>
+          <a href="" onclick="UC_Weight(); return false;">Weight</a>
+      </div>
+    </div>
   <a href="" onclick="LinksToShare(); return false;">Links</a>
 </div>
 <!-- ****************************************** -->
@@ -102,59 +120,41 @@
 
 <script>
   //Code
-  function TEMA_PDF(){
-    document.getElementById("myIframe").src ="TEMA.pdf";
+  function UC_Area(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Area.html";
   }
-    function DS_pdf(){
-    document.getElementById("myIframe").src ="DS2011.pdf";
+    function UC_Density(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Density.html";
   }
-    function ASMEVIIID1_PDF(){
-    document.getElementById("myIframe").src ="ASME2017SECVIII1.pdf";
+    function UC_Temperature(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Temperature.html";
   }
-    function ASMEVIIID2_PDF(){
-    document.getElementById("myIframe").src ="ASME2017SECVIII2.pdf";
+    function UC_Length(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Length.html";
   }
-
-  //Catalog
-      function Zenwang_PDF(){
-    document.getElementById("myIframe").src ="Catalog/ZenWang.pdf";
+    function UC_Viscoisty_Dynamic(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Viscosity_Dynamic.html";
   }
-      function Gesmex_PDF(){
-    document.getElementById("myIframe").src ="Catalog/GESMEX.pdf";
+      function UC_Weight(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Weight.html";
   }
-    function Uniwel_PDF(){
-    document.getElementById("myIframe").src ="Catalog/UNIWEL.pdf";
+    function UC_Flow_Mass(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Flow_Mass.html";
   }
-    function SFin_GWC_PDF(){
-    document.getElementById("myIframe").src ="Catalog/GWC_SFin.pdf";
+    function UC_Power(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Power.html";
   }
-    function LowFin_GWC_PDF(){
-    document.getElementById("myIframe").src ="Catalog/GWC_LowFin.pdf";
+    function UC_Heat_Transfer_Coefficient(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Heat_Transfer_Coefficient.html";
   }
-    function UOP_PDF(){
-    document.getElementById("myIframe").src ="Catalog/UOP.pdf";
+    function UC_Pressure(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Pressure.html";
   }
-  
-    //SW Calculations
-      function ASME_WN(){
-    document.getElementById("myIframe").src ="ASME_WN.html";
+    function UC_Specific_Heat_Capacity(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Specific_Heat_Capacity.html";
   }
-    function LMTD_SW(){
-    document.getElementById("myIframe").src ="LMTD/LMTD_Calc.html";
-  }
-
-    function Blasius_SW(){
-    document.getElementById("myIframe").src ="Inner%20Tube%20Pressure%20Drop%20Calculation/InnerTubePressureDrop.html";
-  }
-
-    function Gnielinski_SW(){
-    document.getElementById("myIframe").src ="Inner%20Tube%20Heat%20Transfer%20Calculation/InnerTubeHeatTransfer.html";
-  }
-    function UnitConvert_SW(){
-    document.getElementById("myIframe").src ="Unit%20Converter/UnitConvert.html";
-  }
-      function VFR_SW(){
-    document.getElementById("myIframe").src ="Volumetric%20Flow%20Rate%20Calculations/Nm3Tokg.html";
+    function UC_Thermal_Conductivity(){
+    document.getElementById("myIframe").src ="UnitConverter/UC_Thermal_Conductivity.html";
   }
 
   //Links
